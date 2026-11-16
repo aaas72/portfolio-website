@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# abdellahsheikh.dev — Portfolio & Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Source code of my personal website: a portfolio, technical blog and services page, managed through a built-in admin dashboard backed by Supabase.
 
-Currently, two official plugins are available:
+**Live site:** [abdellahsheikh.dev](https://abdellahsheikh.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Public site**
+- Home page with about, services, working process and tools
+- Projects showcase with dedicated project pages
+- Technical blog with rich content: code blocks with syntax highlighting, tables, images and aligned text
+- Consultation booking (Calendly) and a contact form
+- SEO: per-page meta tags, `sitemap.xml` and `robots.txt`
+- Scroll-reveal animations and a polished, responsive design
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Admin dashboard** (`/admin`, protected by Supabase Auth)
+- Create and edit projects, blog posts, tools and the About section
+- Rich-text editor built on TipTap, with resizable images
+- Image uploads with client-side compression to Supabase Storage
+- Inbox for contact messages and a board for project ideas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Architecture
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── screens/            # Public pages + Admin/ (layout, login, managers for each content type)
+├── components/         # UI: cards, headers, blog, projects, forms, TipTap editor/renderer, alerts
+├── services/           # Supabase data access per entity (projects, blogs, tools, messages…)
+├── context/            # Global alert/toast state
+├── hooks/              # Scroll reveal
+├── lib/supabase.ts     # Supabase client
+└── types/              # Shared TypeScript models
+supabase_schema.sql     # Tables and row-level security policies
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Data is read publicly and written only by authenticated admins, enforced with Supabase row-level security policies.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Requirements:** Node.js 20+, a Supabase project
+
+```bash
+npm install
 ```
+
+Create a `.env` file:
+
+```env
+VITE_SUPABASE_URL=your-project-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+Apply `supabase_schema.sql` in the Supabase SQL editor, then:
+
+```bash
+npm run dev       # development server
+npm run build     # type-check and production build
+```
+
+## Author
+
+**Abdellah Sheikh** — [abdellahsheikh.dev](https://abdellahsheikh.dev) · [LinkedIn](https://www.linkedin.com/in/abdellahsheikh)
