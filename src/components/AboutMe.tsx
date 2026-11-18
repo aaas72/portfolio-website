@@ -297,7 +297,7 @@ const AboutMe: React.FC = () => {
               </h2>
             </div>
             <Link
-              to="/projects"
+              to="/projects/"
               className="text-xs font-bold text-neutral-600 hover:text-black uppercase tracking-wider flex items-center gap-1.5 transition-colors"
             >
               <span>View All Projects</span>
@@ -557,7 +557,7 @@ const AboutMe: React.FC = () => {
               )}
 
               <Link
-                to="/contact"
+                to="/contact/"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gray-50 border border-gray-200 text-[#1A1A1A] font-medium text-xs uppercase tracking-widest hover:bg-gray-100 active:scale-[0.99] transition-all duration-300"
               >
                 <span>Get In Touch</span>

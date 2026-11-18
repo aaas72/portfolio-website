@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
           scrollDir={scrollDir}
           delayMs={550}
         >
-          <Link to="/projects">
+          <Link to="/projects/">
             <Button variant="outline" size="lg">
               ALL WORKS
             </Button>

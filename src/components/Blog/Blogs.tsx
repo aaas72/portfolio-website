@@ -74,7 +74,7 @@ const Blogs: React.FC = () => {
           scrollDir={scrollDir}
           delayMs={450}
         >
-          <Link to="/blog">
+          <Link to="/blog/">
             <Button variant="outline" size="lg">
               ALL POSTS
             </Button>

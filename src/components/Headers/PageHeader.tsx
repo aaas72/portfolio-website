@@ -45,7 +45,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, question }) => {
               <React.Fragment key={index}>
                 <span className="mx-2">.</span>
                 <Link
-                  to={`/${pathSegments.slice(0, index + 1).join("/")}`}
+                  to={`/${pathSegments.slice(0, index + 1).join("/")}/`}
                   className="capitalize hover:text-white transition-colors duration-300"
                 >
                   {segment}

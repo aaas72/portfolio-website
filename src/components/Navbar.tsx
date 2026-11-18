@@ -4,10 +4,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "/about/" },
+  { name: "Projects", href: "/projects/" },
+  { name: "Blog", href: "/blog/" },
+  { name: "Contact", href: "/contact/" },
 ];
 
 const socialLinks = [
@@ -151,7 +151,7 @@ export default function Navbar() {
         <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 pointer-events-auto">
           <div className={navItemsClasses}>
             {navLinks.map((link) => {
-              const isActive = location.pathname === link.href;
+              const isActive = location.pathname.replace(/\/?$/, "/") === link.href;
               
               const linkClasses = isLight
                 ? isActive
@@ -217,7 +217,7 @@ export default function Navbar() {
       <div id="mobile-menu" role="dialog" aria-modal="true" aria-hidden={!mobileMenuOpen} className={`fixed inset-0 bg-black bg-opacity-90 z-40 flex flex-col items-center justify-center transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="flex flex-col items-center space-y-4 xs:space-y-6 sm:space-y-8 mt-10 xs:mt-16 sm:mt-20">
           {navLinks.map((link) => {
-            const isActive = location.pathname === link.href;
+            const isActive = location.pathname.replace(/\/?$/, "/") === link.href;
             return (
               <Link
                 key={link.name}

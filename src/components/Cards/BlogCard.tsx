@@ -19,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ id, title, shortDescription, catego
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const CardWrapper = isAdmin ? "div" : Link;
-  const wrapperProps = isAdmin ? { className: "group h-full" } : { to: `/blog/${id}`, className: "group h-full block" };
+  const wrapperProps = isAdmin ? { className: "group h-full" } : { to: `/blog/${id}/`, className: "group h-full block" };
 
   return (
     <CardWrapper {...(wrapperProps as any)}>

@@ -194,7 +194,7 @@ const ManageAbout: React.FC = () => {
         </div>
         <div className="flex items-center gap-3">
           <a
-            href="/#/about"
+            href="/about/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white hover:bg-white/10 text-xs font-bold tracking-wider uppercase transition-all"

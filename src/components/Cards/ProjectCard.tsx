@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const CardWrapper = isAdmin ? "div" : Link;
-  const wrapperProps = isAdmin ? { className: "block h-full cursor-default" } : { to: `/project/${id}`, className: "block h-full" };
+  const wrapperProps = isAdmin ? { className: "block h-full cursor-default" } : { to: `/project/${id}/`, className: "block h-full" };
 
   return (
     <CardWrapper {...(wrapperProps as any)}>

@@ -3,6 +3,7 @@ import { projectService } from "../../services";
 import { FiChevronDown } from "react-icons/fi";
 import Loading from "../Loading";
 import TipTapContent from "../TipTapContent";
+import Seo from "../Seo";
 import type { Project } from "../../types";
 
 interface ProjectPageProps {
@@ -64,6 +65,14 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projectId }) => {
 
   return (
     <>
+      <Seo
+        title={`${project.title} — Abdellah Sheikh`}
+        description={project.short_description || project.description}
+        keywords={[...(project.technical_stack || []), "Abdellah Sheikh", "عبداللاه شيخ", "project"]}
+        image={project.cover_image || project.image_url}
+        type="article"
+        canonicalPath={`/project/${project.id}`}
+      />
       {!imageLoaded && <Loading />}
       <div className={`project-page transition-opacity duration-1000 ${!imageLoaded ? "opacity-0" : "opacity-100"}`}>
       {/* Page header with project information */}
