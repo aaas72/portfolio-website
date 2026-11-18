@@ -1,42 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://abdellahsheikh.dev/</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-18</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://abdellahsheikh.dev/about</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://abdellahsheikh.dev/about/</loc>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://abdellahsheikh.dev/projects</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://abdellahsheikh.dev/projects/</loc>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://abdellahsheikh.dev/blog</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://abdellahsheikh.dev/blog/</loc>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abdellahsheikh.dev/services</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://abdellahsheikh.dev/contact/</loc>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abdellahsheikh.dev/contact</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://abdellahsheikh.dev/blog/3433cc19-2e45-43b0-9c7f-e97cf6cc6f9a/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/blog/f0e1e46f-6c27-48f1-9359-cf9e00ba91c4/</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/blog/c738e726-4e47-45e9-8fdc-f6a45473b22d/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/6e5e6a57-6bcc-4140-9841-340685570bc4/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/4ea0f83e-3576-4875-b8d9-48b805ea85e4/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/36bbe1e0-b29f-4db6-912c-2cdab9b80ed9/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/acae9b1d-764b-42cc-92ba-0cb0f4105e67/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/c3fb912e-b0c1-417b-87c6-0169882f404f/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/76540136-dca0-4146-bbd3-b7701e2ead7e/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/35617af7-2904-4650-ab60-99ea6a33acd6/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/b8eb5d52-af6a-47c7-a801-32b8d15e3a8e/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/9f2b8afd-c285-4620-a4cf-1dd013de9904/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/c0550c41-5f48-40e4-bec4-c284ddb379d2/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://abdellahsheikh.dev/project/46d4f818-3341-47f8-a3d4-7032f3dadff2/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
